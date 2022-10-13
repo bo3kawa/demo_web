@@ -1,0 +1,78 @@
+/* remは指定された元の大きさに対しての倍率 */
+
+/* ページ全体の指定 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.2rem;
+    width: 100vw;
+    height: 100vh;
+    background:linear-gradient(to right,rgb(215, 228, 222),rgb(1, 179, 104));  /* 左から右へグラデーション */
+    overflow: hidden;     /* はみ出た部分を隠す */
+    position: relative;   /* postionの親要素 */
+}
+
+nav{
+    display: flex; /* 要素内を横並び */
+    width: 80%;
+    margin: 20px auto ;  /* 縦横20px,横幅オート（この場合80%になっているので良い感じに中央揃えになる） */
+    align-items: center;
+    font-weight: 550;
+    
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links li{   
+    list-style: none; /* リストタグの・を削除 */
+}
+
+.logo-area{
+    display: flex;   /* 要素内を横並び */
+    align-items: center;
+}
+
+.logo{
+    width: 20%;
+    height: 20%;
+    margin-right: 12px;
+}
+
+.nav-links ul li{
+    display: inline-block;    /* インライン要素に変更 */
+    padding: 0 2rem;
+}
+.nav-links ul a {
+    font-weight: 600;
+    color:rgb(0, 0, 0);
+    text-decoration: none;  
+     transition: 0.3s;  /*0.3秒かけて変化 */
+}
+
+.nav-links ul a:hover{
+    color: rgb(194, 47, 47);
+}
+
+.information {
+    width: 1000px;
+    height: 1000px;
+    background: rgb(151, 129, 129);
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    transform: translateY(-50%);
+}
+
+#circle {
+    width: 1000%;
+    height: 1000%;
+    position: absolute; 
+}
